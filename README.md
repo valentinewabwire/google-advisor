@@ -6,7 +6,7 @@ Then show the details on the map.
 
 [Travel advisor api](https://rapidapi.com/apidojo/api/travel-advisor/)
 
-Live Demo [Preview]()
+Live Demo [Preview](https://62553588190d161d81e4637a--google-advisor.netlify.app/)
 
 # Snapshot
 
