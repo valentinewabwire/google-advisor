@@ -7,7 +7,7 @@ import {
   Select,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import React from "react";
+import React, { createRef, useEffect, useState } from "react";
 import PlaceDetails from "./PlaceDetails";
 
 const useStyles = makeStyles((theme) => ({
@@ -39,8 +39,17 @@ export default function List({
   childClicked,
   places,
 }) {
+  const [elRefs, setElRefs] = useState([]);
   //   console.log("test");
   const classes = useStyles();
+  useEffect(() => {
+    setElRefs((refs) => {
+      return Array(places.length)
+        .fill()
+        .map((_, index) => refs[index] || createRef());
+    });
+  }, [places]);
+
   return (
     <div className={classes.container}>
       {isLoading ? (
@@ -65,8 +74,13 @@ export default function List({
             {places &&
               places.map((place, index) => {
                 return (
-                  <Grid item xs={12} md={12}>
-                    <PlaceDetails place={place} key={index} />
+                  <Grid item xs={12} md={12} ref={elRefs[index]}>
+                    <PlaceDetails
+                      selected={Number(childClicked) === index}
+                      placeRef={elRefs[index]}
+                      place={place}
+                      key={index}
+                    />
                   </Grid>
                 );
               })}
