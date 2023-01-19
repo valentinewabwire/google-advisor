@@ -21,7 +21,7 @@ git clone https://github.com/valentinewabwire/google-advisor.git
 2. Navigate to the project directory:
 
 ```
-cd google-advisor-react-app
+cd google-advisor
 ```
 
 3. Install the dependencies:
