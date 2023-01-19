@@ -1,16 +1,42 @@
 ## GOOGLE MAPs Travel Advisor
 
-Finding places using google map API and travel advice api.
-
-Then show the details on the map.
-
-[Travel advisor api](https://rapidapi.com/apidojo/api/travel-advisor/)
+This is a basic react app that uses the Travel-Advisor API to provide information about tourist destinations. It allows users to search for destinations, view detailed information about them, and save their favorite destinations for later. The app is built using a number of popular libraries and frameworks, including React, Material-UI, and Firebase. To run the app, you will need to have Node.js and npm installed on your machine.
 
 Live Demo [Preview](https://62553588190d161d81e4637a--google-advisor.netlify.app/)
 
 # Snapshot
 
 ![image](https://user-images.githubusercontent.com/53892988/162912681-84047fe1-7972-45cc-ab68-48e9e068b682.png)
+
+## Running the APP
+
+To run the app, you will need to have Node.js and npm installed on your machine.
+
+1. Clone the repository:
+
+```
+git clone https://github.com/valentinewabwire/google-advisor.git
+```
+
+2. Navigate to the project directory:
+
+```
+cd google-advisor-react-app
+```
+
+3. Install the dependencies:
+
+```
+npm install
+```
+
+4. Start the development server:
+
+```
+npm start
+```
+
+5. Open http://localhost:3000 to view the app in the browser.
 
 # Getting Started with Create React App
 
